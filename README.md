@@ -1,6 +1,6 @@
-# 🐧 Script para automação da atualização do Linux
+## 🐧 Script para automação da atualização do Linux
 
-## Esse script tem como objetivo automatizar o sudo apt update && sudo apt upgrade
+### Esse script tem como objetivo automatizar o sudo apt update && sudo apt upgrade
 
 ### Foi utilizado o 🐍 Python como linguagem do script
 
