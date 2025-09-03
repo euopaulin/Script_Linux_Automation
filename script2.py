@@ -13,16 +13,19 @@ def autom_sudoapt(command):
         sys.exit(1)
 
 def main():
-    print("Iniciando a atualização e o upgrade do sistema...")
+    print("Iniciando a atualização e instalação do htop, vscode e git...")
+
+    autom_sudoapt("sudo apt update -y")
     
-    # Executa a atualização da lista de pacotes
-    autom_sudoapt("sudo apt update")
-    
-    # Executa o upgrade dos pacotes.
-    # O -y responde 'sim' a qualquer prompt de confirmação.
     autom_sudoapt("sudo apt upgrade -y")
+
+    autom_sudoapt("sudo apt install -y htop")
+
+    autom_sudoapt("sudo apt install -y git")
+
+    autom_sudoapt("sudo snap install -y --classic code")
     
-    print("Atualização e upgrade concluídos!")
+    print("Atualização e instalação concluídos!")
 
 if __name__ == "__main__":
     main()
